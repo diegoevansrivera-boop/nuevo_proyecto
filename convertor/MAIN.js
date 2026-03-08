@@ -25,3 +25,18 @@ function pedir_numero(mensaje) {
 
 mostrarMenu();
 let opcion = pedirNumero("Seleccione una opcion (1 o 2):");
+
+if (opcion === 1) {
+    let celsius = pedirNumero("Ponga la temperatura en Celsius:");
+    let resultado = (9/5 * celsius) + 32;
+    console.log(`${celsius} °C en Fahrenheit son: ${resultado} °F`);
+} else if (opcion === 2) {
+    let metros = pedirNumero("Ponga los metros a convertir:");
+    let resultado = metros / 1000;
+    console.log(`${metros} mts en kilómetros son: ${resultado} km`);
+} else {
+    console.log("Formato incorrecto, solo se toman en cuenta las opciones 1 y 2");
+}
+
+console.log("");
+console.log("Fin del programa, ¡ten un feliz resto de dia! :)");
