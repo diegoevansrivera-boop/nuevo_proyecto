@@ -9,10 +9,10 @@ function mostrarMenu() {
 }
 
 
-function pedir_numero(mensaje) {
+function pedirNumero(mensaje) {
     while (true) {
         let entrada = prompt(mensaje); 
-        let numero = parsefloat(entrada);
+        let numero = parseFloat(entrada);
 
         if (!isNaN(numero)) {
             return numero; 
